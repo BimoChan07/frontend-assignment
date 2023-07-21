@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import ProductList from "./components/ProductList";
-import { Spinner } from "react-bootstrap/Spinner";
+import { useState, useEffect } from "react";
+import ProductList from "../components/ProductList";
+import Spinner from "react-bootstrap/Spinner";
 import { URL } from "../constants";
 
 const Homepage = ({ searchQuery }) => {
@@ -11,6 +11,8 @@ const Homepage = ({ searchQuery }) => {
       try {
         const response = await fetch(URL);
         const data = await response.json();
+        console.log(data);
+
         const filteredData = data.filter((product) =>
           product.title.toLowerCase().includes(searchQuery.toLowerCase())
         );

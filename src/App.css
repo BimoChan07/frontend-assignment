@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: center;
 }
+
 .product-list {
   width: 100vw;
   display: flex;
@@ -13,9 +14,12 @@
   gap: 25px;
   justify-content: center;
 }
+
 .card-text {
   height: 100px;
   overflow: hidden;
+  text-decoration: none !important;
+  text-align: justify;
 }
 
 .card-img-top {
@@ -23,11 +27,14 @@
   aspect-ratio: 3/2;
 }
 
-.card-title {
+.card-title h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
+  color: purple;
 }
+
 .product-detail-container {
   display: flex;
   padding: 100px;
@@ -74,4 +81,11 @@ span {
   font-size: 25px;
   font-weight: 500;
   color: #494646;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
