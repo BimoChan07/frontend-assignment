@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const [product, setProductDetail] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-  const url = "https://fakestoreapi.com/products";
+  const url = "https://fakestoreapi.com/";
   useEffect(() => {
     const fetchProductById = async () => {
       try {
